@@ -1,4 +1,3 @@
-# ppp_llm_work
 # PPP LLM Contract Analysis
 
 This project analyzes PPP / concession agreements using LLMs and generates structured legal analysis and Word reports.
