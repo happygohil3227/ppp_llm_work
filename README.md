@@ -8,8 +8,33 @@ This project analyzes PPP / concession agreements using LLMs and generates struc
 # analysis_docs/
 Final Word (`.docx`) reports combining all 12 sections.
 
-## How to read this document:
-This report is divided into sections. For each section, first read Legal Position to understand what the contract actually says, then Economic Implication and Bankability Impact to see what it means in practice. Use Clause Evidence and Evidence Strength to check how strongly the conclusions are supported by the contract text.
+## How to read this document
+
+Each section contains **LLM-generated analysis** of the contract and is structured into the following major subsections:
+
+### Legal Position  
+Explains what the contract explicitly allows, restricts, or mandates, based strictly on the wording of the agreement.
+
+### Economic Implication  
+Describes the commercial and cost-related consequences that arise directly from the contractual provisions.
+
+### Bankability Impact  
+Explains how lenders and investors are likely to view the clause structure in terms of risk, enforceability, and financing comfort.
+
+### Clause Evidence  
+Provides **verbatim excerpts from the contract**, including clause or article numbers where available.  
+This section should be used to verify that the analysis is grounded in the actual contract text.
+
+### Evidence Strength  
+Indicates how clearly the contract supports the analysis:
+- **STRONG** – Clear and direct clauses exist  
+- **MODERATE** – Covered indirectly or across multiple clauses  
+- **WEAK** – Mentioned ambiguously  
+- **NONE** – Not provided in the document
+
+### Confidence Assessment  
+Summarizes the overall confidence level for the section based on the strength and clarity of the clause evidence.
+
 
 
 ## Folder Structure
