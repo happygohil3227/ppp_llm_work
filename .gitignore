@@ -13,7 +13,6 @@ venv/
 # Generated data
 vectorDB/
 vdb_data/
-extracted_text/
 
 # Jupyter
 .ipynb_checkpoints/
