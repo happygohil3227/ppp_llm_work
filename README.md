@@ -3,6 +3,8 @@
 
 This project analyzes PPP / concession agreements using LLMs and generates structured legal analysis and Word reports.
 
+![12-Point PPP Framework](framework12point.png)
+
 # analysis_docs/
 Final Word (`.docx`) reports combining all 12 sections.
 
