@@ -3,6 +3,13 @@
 
 This project analyzes PPP / concession agreements using LLMs and generates structured legal analysis and Word reports.
 
+# analysis_docs/
+Final Word (`.docx`) reports combining all 12 sections.
+
+## How to read this document:
+This report is divided into sections. For each section, first read Legal Position to understand what the contract actually says, then Economic Implication and Bankability Impact to see what it means in practice. Use Clause Evidence and Evidence Strength to check how strongly the conclusions are supported by the contract text.
+
+
 ## Folder Structure
 
 ppp_llm_work/
@@ -20,9 +27,6 @@ One subfolder per document containing text embeddings.
 ### outputs/
 Section-wise analysis in JSON format.  
 Each document folder contains 12 JSON files (one per analysis section).
-
-### analysis_docs/
-Final Word (`.docx`) reports combining all 12 sections.
 
 ### utils/
 Helper code.
