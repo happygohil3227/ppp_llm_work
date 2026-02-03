@@ -1,0 +1,14 @@
+Finding:
+Document B provides greater flexibility in the revenue model for the Concessionaire compared to Document A. Document B allows the Railway Administration to adjust rates, which introduces variability in costs for the Applicant, while Document A lacks explicit provisions on tariff and revenue flexibility.
+
+Comparison Insight:
+Document B's flexibility in allowing the Railway Administration to adjust rates (Clause 16(a)) provides a mechanism for adapting to market conditions, which can be advantageous for revenue optimization. However, this flexibility also introduces uncertainty in cost predictability, impacting cash flow certainty. Document A does not provide specific clauses on tariff and revenue flexibility, which may limit the Concessionaire's ability to adapt to changing market conditions but offers more predictable cash flows.
+
+Impact on Cash Flows:
+In Document B, the ability of the Railway Administration to adjust rates introduces uncertainty in cash flows, which could affect financial planning and forecasting. This variability may pose a risk to lender comfort due to the potential for fluctuating revenue streams. In contrast, Document A's lack of explicit revenue flexibility provisions may result in more stable cash flows, potentially enhancing lender comfort due to predictability, albeit at the cost of reduced adaptability to market changes.
+
+Clause Evidence:
+- Document A: No specific clauses addressing tariff and revenue flexibility.
+- Document B: "The Applicant shall pay freight and also all other charges (including siding, placement and withdrawal charges, where leviable) on traffic to and from the siding from the date of opening of the siding in accordance with the Railway Administration's Tariffs, Circulars and Advices in force at or given effect to from the time the traffic is carried or such rates as may be fixed by the Railway Administration from time to time." (Clause 16(a))
+
+Evidence Strength: STRONG
