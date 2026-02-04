@@ -71,5 +71,83 @@ Sandbox for testing.
 ### .env
 Environment variables (API keys).
 
+## Setup & Run (Replication Guide)
+
+### 1) Create and activate a virtual environment
+Mac/Linux:
+```bash
+python -m venv venv
+source venv/bin/activate
+```
+Windows (PowerShell):
+```powershell
+python -m venv venv
+venv\\Scripts\\Activate.ps1
+```
+Windows (CMD):
+```cmd
+python -m venv venv
+venv\\Scripts\\activate.bat
+```
+
+Note: You do **not** need to share your local `cag_env310` folder.  
+Each user should create their own `venv` and install dependencies.
+
+### 2) Install dependencies
+Use the pinned `requirements.txt` (generated from the working environment):
+```bash
+pip install -r requirements.txt
+```
+
+### 3) Create `.env`
+Create a `.env` file in the project root and add:
+```env
+OPENAI_API_KEY=your_openai_key_here
+AWS_REGION=ap-south-1
+S3_BUCKET=textract-input-happy
+S3_PREFIX=
+RAG_TOP_K=12
+OPENAI_MAX_CONCURRENCY=2
+OPENAI_MAX_RETRIES=4
+OPENAI_RETRY_BASE_SECONDS=5
+```
+
+Notes:
+- `OPENAI_API_KEY` is required for all LLM analysis.
+- AWS credentials (for Textract + S3) must be configured in your environment (e.g., `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`) or via AWS profiles.
+
+### 4) Run document analysis (JSON + DOCX)
+```bash
+python docu_analyser.py "DOCUMENT_NAME"
+```
+This reads `extracted_text/<DOCUMENT_NAME>.txt`, uses `vectorDB/<DOCUMENT_NAME>/`, writes section JSONs into `outputs/<DOCUMENT_NAME>/`, and generates:
+```
+analysis_docs/<DOCUMENT_NAME>_PPP_Legal_Analysis.docx
+```
+
+### 5) Run document comparison (multi-query + DOCX)
+```bash
+python compare.py "DOC_A" "DOC_B"
+```
+Outputs:
+- JSON files per query:
+```
+doc_compare/DOC_A_&DOC_B_compare/
+```
+- Combined DOCX:
+```
+doc_compare/DOC_A_&DOC_B_compare.docx
+```
+
+### 6) Streamlit apps (optional)
+If you want a UI:
+```bash
+streamlit run app.py
+```
+Or the LangGraph version:
+```bash
+streamlit run app2.py
+```
+
 ### .gitignore
 Git ignore rules.
