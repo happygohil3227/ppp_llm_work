@@ -10,10 +10,6 @@ __pycache__/
 cag_env310/
 venv/
 
-# Generated data
-vectorDB/
-vdb_data/
-
 # Jupyter
 .ipynb_checkpoints/
 
@@ -32,8 +28,6 @@ cag_env310/
 venv/
 
 # Generated data
-vectorDB/
-vdb_data/
 
 # Jupyter
 .ipynb_checkpoints/
