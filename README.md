@@ -142,15 +142,6 @@ doc_compare/DOC_A_&DOC_B_compare/
 doc_compare/DOC_A_&DOC_B_compare.docx
 ```
 
-### 6) Streamlit apps (optional)
-If you want a UI:
-```bash
-streamlit run app.py
-```
-Or the LangGraph version:
-```bash
-streamlit run app2.py
-```
 
 ### .gitignore
 Git ignore rules.
