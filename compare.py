@@ -225,6 +225,7 @@ def run_compare(doc_a: str, doc_b: str) -> Path:
     results = []
 
     for q in QUERIES:
+        print(f"Processing query {q['id']:02d}: {q['title']}")
         section_ids_raw = agent1_chain.invoke({"user_query": q["query"]})
         section_ids = [int(s.strip()) for s in section_ids_raw.split(",") if s.strip().isdigit()]
 
@@ -255,6 +256,7 @@ def run_compare(doc_a: str, doc_b: str) -> Path:
         out_path.write_text(json.dumps(out_json, indent=2, ensure_ascii=False), encoding="utf-8")
 
         results.append(out_json)
+        print(f"  ✓ Saved query output: {out_path}")
 
     print(f"Saved {len(results)} query outputs to: {compare_dir}")
     return compare_dir
@@ -298,6 +300,7 @@ def generate_compare_docx(doc_a: str, doc_b: str, compare_dir: Path) -> Path:
         doc.add_page_break()
 
     doc.save(output_docx)
+    print(f"  ✓ DOCX saved: {output_docx}")
     return output_docx
 
 

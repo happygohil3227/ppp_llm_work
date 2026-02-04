@@ -142,6 +142,5 @@ doc_compare/DOC_A_&DOC_B_compare/
 doc_compare/DOC_A_&DOC_B_compare.docx
 ```
 
-
 ### .gitignore
 Git ignore rules.
