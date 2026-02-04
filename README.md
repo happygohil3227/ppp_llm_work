@@ -73,6 +73,10 @@ Environment variables (API keys).
 
 ## Setup & Run (Replication Guide)
 
+### Python version
+This project was tested with **Python 3.10.19**.  
+Use Python 3.10.x for best compatibility with the current dependencies.
+
 ### 1) Create and activate a virtual environment
 Mac/Linux:
 ```bash
@@ -90,7 +94,6 @@ python -m venv venv
 venv\\Scripts\\activate.bat
 ```
 
-Note: You do **not** need to share your local `cag_env310` folder.  
 Each user should create their own `venv` and install dependencies.
 
 ### 2) Install dependencies
